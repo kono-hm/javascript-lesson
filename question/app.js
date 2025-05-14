@@ -115,3 +115,51 @@ console.log('5を3で割った余りは' + remainder(5,3) + 'です。');
 
 
 // ＊応用編問題＊
+// Q1  標準組み込みオブジェクト  0~9のランダムの整数
+var random = Math.floor(Math.random()*11);
+console.log(random);
+
+// Q2  コールバック関数  3秒後にHello World
+setTimeout (function(){
+  console.log('Hello World!');
+},
+3000);
+
+// Q3 if
+let num = 2;
+if (num > 0){
+  console.log('num is greater than 0');
+}
+else if (num < 0){
+  console.log('num is less than 0');
+}
+else if (num == 0){
+  console.log('num is 0');
+}
+
+
+// Q4 for  ?????
+let numbers = [];
+
+for (let i = 0, i < 100, i++){
+console.log();
+}
+
+console.log(numbers);
+
+
+// Q5 for if    ????
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+for (let i =0; 0 < 10; i++){
+if (mixed = 0 || 4 ){
+  console.log('even');
+}
+else if (mixed = 1 || 5){
+  console.log('odd');
+}
+else if (mixed = '2' || '8' || '9'){
+  console.log('not number');
+}
+}
+
+
