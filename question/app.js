@@ -77,7 +77,7 @@ let calc = {};
 function add(x,y){
   console.log(x + y);
 }
-add()
+add(2,5)
 
 let calc = {};
 function subtract(x,y){
