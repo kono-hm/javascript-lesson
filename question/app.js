@@ -3,12 +3,12 @@
 let nickname = 'ごっしー';
 let age = 28;
 let text  = '私のニックネームは' + nickname + 'です。' + '年齢は' + age + '歳です。';
-console.log(text); //私のニックネームはごっしーです。年齢は28歳です。  
+console.log(text);   
 
 // Q2 配列
 let languages = ['JavaScript','PHP','Ruby', 'Python', 'GO'];
-let text2 = `私の好きな言語は${JavaScript}です。次は${Python}を勉強してみたいです。`;
-console.log(text2);//私の好きな言語はJavaScriptです。次はPythonを勉強してみたいです。
+let template = `私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`;
+console.log(template);
 
 // Q3 オブジェクト
 let user = {
@@ -16,8 +16,8 @@ let user = {
   age: 26,
   bloodType: 'A',
   favorite: 'card',
-}
-console.log(user.age); //26
+};
+console.log(user.age); 
 
 
 // Q4 配列×オブジェクト
@@ -39,8 +39,8 @@ let playerList = [
     favorites: ['Football', 'Smash Bros.'],
   },
 ];
-console.log(playerList.Bob.favorites[1]); //The Legend of Zelda
-//Bobの好きなゲームはThe Legend of Zelda
+console.log(playerList[1].favorites[1]); 
+
 
 
 // Q5 四則演算
@@ -48,54 +48,48 @@ let JohnAge = 26;
 let BobAge = 33;
 let MichaelAge = 22;
 let ageAverage = (JohnAge + BobAge + MichaelAge) / 3;
-console.log(ageAverage); //27
+console.log(ageAverage); 
 
 // Q6 関数
 
 function sayHello(){
   console.log('Hello');
 }
-sayHello(); //Hello
+sayHello(); 
 
 let sayWorld = function(){
   console.log('World');
 }
-sayWorld(); //World
+sayWorld(); 
 
 
 // Q7 メソッド
-let user = {
+user = {
   birthday: '2000-09-27',
   sayHallo: function() {
     console.log('Hello!');
   }
 };
-user.sayHallo(); //Hello!
+user.sayHallo(); 
 
 // Q8 引数
 let calc = {};
-function add(x,y){
+  function add (x,y){
   console.log(x + y);
-}
-add(2,5)
-
-let calc = {};
-function subtract(x,y){
+};
+  function subtract (x,y){
   console.log(x - y);
-}
-subtract(20,10)
-
-let calc = {};
-function multiply(x,y){
-    console.log(x * y);
-}
-multiply(7,7)
-
-
-let calc = {};
-function divide(x,y){
+};
+  function multiply (x,y){
+  console.log(x * y);
+};
+  function divide (x,y){
     console.log(x / y);
-}
+};
+
+add(2,5)
+subtract(20,10)
+multiply(7,7)
 divide(10,2)
 
 
@@ -114,9 +108,12 @@ console.log('5を3で割った余りは' + remainder(5,3) + 'です。');
 
 
 
+
+
+
 // ＊応用編問題＊
 // Q1  標準組み込みオブジェクト  0~9のランダムの整数
-var random = Math.floor(Math.random()*11);
+let random = Math.floor(Math.random()*10);
 console.log(random);
 
 // Q2  コールバック関数  3秒後にHello World
@@ -125,41 +122,44 @@ setTimeout (function(){
 },
 3000);
 
+
+
 // Q3 if
 let num = 2;
 if (num > 0){
   console.log('num is greater than 0');
-}
-else if (num < 0){
+}else if (num < 0){
   console.log('num is less than 0');
-}
-else if (num == 0){
+}else if (num === 0){
   console.log('num is 0');
 }
 
 
-// Q4 for  ?????
+// Q4 for 
 let numbers = [];
 
-for (let i = 0, i < 100, i++){
-console.log();
+for (let i = 0; i < 100; i++){
+  numbers.push(i)
 }
-
 console.log(numbers);
 
 
 // Q5 for if    ????
 let mixed = [4, '2', 5, '8', '9', 0, 1];
-for (let i =0; 0 < 10; i++){
-if (mixed = 0 || 4 ){
+
+
+for (let i = 0; i < mixed.length; i++){
+  console.log(mixed[i]);
+
+
+if (mixed == 0 || 4 ){
   console.log('even');
-}
-else if (mixed = 1 || 5){
+}else if (mixed == 1 || 5){
   console.log('odd');
-}
-else if (mixed = '2' || '8' || '9'){
+}else if (mixed == '2' || '8' || '9'){
   console.log('not number');
 }
-}
+
+  }
 
 
