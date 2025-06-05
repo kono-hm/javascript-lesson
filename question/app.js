@@ -73,24 +73,24 @@ user.sayHallo();
 
 // Q8 引数
 let calc = {
-  function add (x,y){
-  console.log(x + y);
+    add : function(x,y){
+      console.log(x + y);
+    },
+    subtract : function(x,y){
+      console.log(x - y);
+    },
+    multiply : function(x,y){
+      console.log(x * y);
+    },
+    divide : function(x,y){
+      console.log(x / y);
+    }
 };
-  function subtract (x,y){
-  console.log(x - y);
-  };
-  function multiply (x,y){
-  console.log(x * y);
-};
-  function divide (x,y){
-    console.log(x / y);
-};
-};
-
-add(2,5)
-subtract(20,10)
-multiply(7,7)
-divide(10,2)
+  
+calc.add(2,5)
+calc.subtract(20,10)
+calc.multiply(7,7)
+calc.divide(10,2)
 
 
 // Q9 返り値
