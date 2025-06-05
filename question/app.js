@@ -1,4 +1,4 @@
-// ＊練習問題＊
+// ＊セクション5  基礎編問題＊
 // Q1 変数
 let nickname = 'ごっしー';
 let age = 28;
@@ -44,10 +44,8 @@ console.log(playerList[1].favorites[1]);
 
 
 // Q5 四則演算
-let JohnAge = 26;
-let BobAge = 33;
-let MichaelAge = 22;
-let ageAverage = (JohnAge + BobAge + MichaelAge) / 3;
+
+let ageAverage = ( playerList[0].age + playerList[1].age + playerList[2].age) / 3;
 console.log(ageAverage); 
 
 // Q6 関数
@@ -72,19 +70,21 @@ user = {
 };
 user.sayHallo(); 
 
+
 // Q8 引数
-let calc = {};
+let calc = {
   function add (x,y){
   console.log(x + y);
 };
   function subtract (x,y){
   console.log(x - y);
-};
+  };
   function multiply (x,y){
   console.log(x * y);
 };
   function divide (x,y){
     console.log(x / y);
+};
 };
 
 add(2,5)
@@ -111,7 +111,7 @@ console.log('5を3で割った余りは' + remainder(5,3) + 'です。');
 
 
 
-// ＊応用編問題＊
+// セクション6  応用編問題
 // Q1  標準組み込みオブジェクト  0~9のランダムの整数
 let random = Math.floor(Math.random()*10);
 console.log(random);
@@ -144,22 +144,31 @@ for (let i = 0; i < 100; i++){
 console.log(numbers);
 
 
-// Q5 for if    ????
-let mixed = [4, '2', 5, '8', '9', 0, 1];
+// Q5 for if   
+let mixed = [4, '2', 5, '8','9', 0, 1];
 
 
 for (let i = 0; i < mixed.length; i++){
   console.log(mixed[i]);
 
-
-if (mixed == 0 || 4 ){
+  
+if (mixed[i] % 2 == 0)
+  if(typeof mixed[i] === 'number'){
   console.log('even');
-}else if (mixed == 1 || 5){
-  console.log('odd');
-}else if (mixed == '2' || '8' || '9'){
-  console.log('not number');
+}else {
+  console.log('not number'); 
 }
 
+
+if (mixed[i] % 2 == 1)
+   if(typeof mixed[i] === 'number'){
+  console.log('odd');
+}else {
+  console.log('not number'); 
+}
   }
+ 
+
+
 
 

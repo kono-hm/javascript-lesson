@@ -1,11 +1,17 @@
+
+// 変数
 let text = 'javascriptの練習';
 console.log(text);
-// 再代入可能
+// 再代入可能　　再定義は不可能
 text = 'javascriptをマスターした';
 console.log(text);
 
+// 定数
+const
 
 
+
+// データ型
 // 文字列型
 let name = 'ジョニー'
 let greet = '私は' + name + '!';
