@@ -50,12 +50,12 @@ console.log(ageAverage);
 
 // Q6 関数
 
-function sayHello(){
+function sayHello() {
   console.log('Hello');
 }
 sayHello(); 
 
-let sayWorld = function(){
+let sayWorld = function() {
   console.log('World');
 }
 sayWorld(); 
@@ -73,16 +73,16 @@ user.sayHallo();
 
 // Q8 引数
 let calc = {
-    add : function(x,y){
+    add : function(x,y) {
       console.log(x + y);
     },
-    subtract : function(x,y){
+    subtract : function(x,y) {
       console.log(x - y);
     },
-    multiply : function(x,y){
+    multiply : function(x,y) {
       console.log(x * y);
     },
-    divide : function(x,y){
+    divide : function(x,y) {
       console.log(x / y);
     }
 };
@@ -94,9 +94,9 @@ calc.divide(10,2)
 
 
 // Q9 返り値
-function remainder(x,y){
-  let resalt = (x % y);
-  return resalt;
+function remainder(x,y) {
+  let result = (x % y);
+  return result;
 }
 console.log('5を3で割った余りは' + remainder(5,3) + 'です。');
 
@@ -104,7 +104,7 @@ console.log('5を3で割った余りは' + remainder(5,3) + 'です。');
 // Q10 スコープ
 // fooが関数として定義されているため、変数xのスコープは{}内となる。
 // よって、関数内に存在しないconsole.log(x);は、変数に値を代入しても参照外となる。
-
+// 参照外の意味 => 実行結果は反映されない という意味で書きました。
 
 
 
@@ -117,7 +117,7 @@ let random = Math.floor(Math.random()*10);
 console.log(random);
 
 // Q2  コールバック関数  3秒後にHello World
-setTimeout (function(){
+setTimeout (function() {
   console.log('Hello World!');
 },
 3000);
@@ -126,11 +126,11 @@ setTimeout (function(){
 
 // Q3 if
 let num = 2;
-if (num > 0){
+if (num > 0) {
   console.log('num is greater than 0');
-}else if (num < 0){
+}else if (num < 0) {
   console.log('num is less than 0');
-}else if (num === 0){
+}else if (num === 0) {
   console.log('num is 0');
 }
 
@@ -138,7 +138,7 @@ if (num > 0){
 // Q4 for 
 let numbers = [];
 
-for (let i = 0; i < 100; i++){
+for (let i = 0; i < 100; i++) {
   numbers.push(i)
 }
 console.log(numbers);
@@ -148,27 +148,21 @@ console.log(numbers);
 let mixed = [4, '2', 5, '8','9', 0, 1];
 
 
-for (let i = 0; i < mixed.length; i++){
+for (let i = 0; i < mixed.length; i++) {
   console.log(mixed[i]);
 
-  
-if (mixed[i] % 2 == 0)
-  if(typeof mixed[i] === 'number'){
+if (mixed[i] % 2 === 0)
+  if (typeof mixed[i] === 'number') {
   console.log('even');
-}else {
+} else {
   console.log('not number'); 
-}
-
-
-if (mixed[i] % 2 == 1)
-   if(typeof mixed[i] === 'number'){
+} else if (mixed[i] % 2 === 1)
+  if (typeof mixed[i] === 'number') {
   console.log('odd');
-}else {
+} else {
   console.log('not number'); 
 }
   }
- 
-
 
 
 
