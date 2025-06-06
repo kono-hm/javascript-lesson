@@ -151,17 +151,17 @@ let mixed = [4, '2', 5, '8','9', 0, 1];
 for (let i = 0; i < mixed.length; i++) {
   console.log(mixed[i]);
 
-if (mixed[i] % 2 === 0)
+if (mixed[i] % 2 === 0) {
   if (typeof mixed[i] === 'number') {
   console.log('even');
 } else {
   console.log('not number'); 
-} else if (mixed[i] % 2 === 1)
+}} else if (mixed[i] % 2 === 1) {
   if (typeof mixed[i] === 'number') {
   console.log('odd');
 } else {
   console.log('not number'); 
-}
+}}
   }
 
 
