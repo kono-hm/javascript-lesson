@@ -73,16 +73,16 @@ user.sayHallo();
 
 // Q8 引数
 let calc = {
-    add : function(x,y) {
+    add: function(x,y) {
       console.log(x + y);
     },
-    subtract : function(x,y) {
+    subtract: function(x,y) {
       console.log(x - y);
     },
-    multiply : function(x,y) {
+    multiply: function(x,y) {
       console.log(x * y);
     },
-    divide : function(x,y) {
+    divide: function(x,y) {
       console.log(x / y);
     }
 };
@@ -128,9 +128,9 @@ setTimeout (function() {
 let num = 2;
 if (num > 0) {
   console.log('num is greater than 0');
-}else if (num < 0) {
+} else if (num < 0) {
   console.log('num is less than 0');
-}else if (num === 0) {
+} else if (num === 0) {
   console.log('num is 0');
 }
 
